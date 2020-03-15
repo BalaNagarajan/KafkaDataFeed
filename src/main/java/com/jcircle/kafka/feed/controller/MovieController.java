@@ -25,7 +25,7 @@ public class MovieController {
     @PostMapping(value = "/v1/movie/info")
     public ResponseEntity<BaseResponse>  getMovieInfo(@RequestBody MovieRequest movieRequest) {
         ResponseEntity<BaseResponse> responseEntityObj = null;
-        MovieResponse movieResponse = movieService.getMovieInfo();
+        MovieResponse movieResponse = movieService.getMovieInfo(movieRequest);
         responseEntityObj = new ResponseEntity(movieResponse, HttpStatus.OK);
         return responseEntityObj;
     }

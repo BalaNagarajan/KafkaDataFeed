@@ -13,5 +13,6 @@ public class MovieRequest extends BaseRequest {
 
     private String movieName;
     private String movieId;
+    private String requestType;
 
 }

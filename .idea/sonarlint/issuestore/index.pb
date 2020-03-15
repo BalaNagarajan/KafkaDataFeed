@@ -26,3 +26,13 @@ Dsrc/main/java/com/jcircle/kafka/feed/controller/MovieController.java,7/a/7a241
 :
 
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
+o
+?src/main/java/com/jcircle/kafka/feed/service/IMovieService.java,c/8/c84f7af9be7fd47686940b9d83a9c02334782248
+w
+Gsrc/main/java/com/jcircle/kafka/feed/service/impl/MovieServiceImpl.java,b/5/b5af4d7eb4e23563865379472a8f0d550046672e
+o
+?src/main/java/com/jcircle/kafka/feed/service/ICacheService.java,3/1/313c5b13213339c23db69791956ddb404a32e211
+w
+Gsrc/main/java/com/jcircle/kafka/feed/service/impl/CacheServiceImpl.java,b/e/be0d0cb48d73d45b0d7b224913ea6368ef2b21b8
+t
+Dsrc/main/java/com/jcircle/kafka/feed/controller/CacheController.java,c/5/c5914d8931ae4ea1bba5913dcc4754a4419cd5e6

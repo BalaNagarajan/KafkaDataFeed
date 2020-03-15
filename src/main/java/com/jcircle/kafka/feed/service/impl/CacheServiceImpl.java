@@ -1,5 +1,6 @@
 package com.jcircle.kafka.feed.service.impl;
 
+import com.jcircle.kafka.feed.request.MovieRequest;
 import com.jcircle.kafka.feed.response.MovieResponse;
 import com.jcircle.kafka.feed.service.ICacheService;
 import com.jcircle.kafka.feed.service.IMovieService;
@@ -24,8 +25,9 @@ public class CacheServiceImpl implements ICacheService {
     private static final String MOVIE_INFO_CACHE = "movieInfoCache";
 
     public void updateMovieInfoCache() {
+        MovieRequest movieRequest = null;
 
-        MovieResponse movieResponse = movieService.getMovieInfo();
+        MovieResponse movieResponse = movieService.getMovieInfo(movieRequest);
     }
 
     public void clearMovieInfoCache() {
