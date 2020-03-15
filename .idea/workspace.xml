@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4dca8082-c924-4e07-9a59-534c936da57e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jcircle/kafka/feed/controller/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jcircle/kafka/feed/controller/MovieController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jcircle/kafka/feed/request/MovieRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jcircle/kafka/feed/request/MovieRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +109,7 @@
       <workItem from="1583874594964" duration="3539000" />
       <workItem from="1583938711140" duration="80000" />
       <workItem from="1583973699387" duration="3349000" />
-      <workItem from="1584149381880" duration="4382000" />
+      <workItem from="1584149381880" duration="5224000" />
     </task>
     <servers />
   </component>
