@@ -25,7 +25,7 @@ public class MovieController {
 
 
     @CrossOrigin
-    @PostMapping(value = "/v1/movie/info")
+    @PostMapping(value = "/v1/movie/info",produces = {"application/json", "application/xml"}, consumes = {"application/json", "application/xml"})
     @ApiOperation(value = "Get Movie Information",
         notes = "Choose the appropriate request parameters.")
     public ResponseEntity<BaseResponse> getMovieInfo(@ApiParam(value = " {\n"

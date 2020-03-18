@@ -5,7 +5,9 @@ import com.jcircle.kafka.feed.processor.IMovieProcessor;
 import com.jcircle.kafka.feed.request.MovieRequest;
 import com.jcircle.kafka.feed.response.MovieResponse;
 import com.jcircle.kafka.feed.service.IMovieService;
+import com.jcircle.kafka.feed.service.producer.MovieProducer;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
@@ -23,12 +25,19 @@ public class MovieServiceImpl implements IMovieService {
     private List<IMovieProcessor> movieProcessors;
     private static final Map<String, IMovieProcessor> processorCache = new HashMap<>();
 
+    @Value("${datafeed.movie.topic.name}")
+    private String topicName;
+
+    private MovieProducer movieProducer;
+
     /**
      * During the container initialization , it sets the list of processors implements the IMovieProcessor.
      * @param movieProcessors
      */
-    public MovieServiceImpl(final List<IMovieProcessor>  movieProcessors) {
+    public MovieServiceImpl(final List<IMovieProcessor>  movieProcessors, MovieProducer movieProducer) {
         this.movieProcessors = movieProcessors;
+        this.movieProducer = movieProducer;
+
 
     }
 
@@ -64,6 +73,11 @@ public class MovieServiceImpl implements IMovieService {
         IMovieProcessor movieProcessor = this.getMovieProcessor(movieRequest.getRequestType());
         movieList = movieProcessor.getMovieInfo();
         movieResponse.setMovieList(movieList);
+
+        //Producing / Publishing the message to the topic....starts
+        this.movieProducer.sendDataFeed(topicName,movieResponse);
+
+        //Producing / Publishing the message to the topic....ends
         return  movieResponse;
     }
 }

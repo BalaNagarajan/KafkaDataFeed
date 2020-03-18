@@ -36,3 +36,19 @@ w
 Gsrc/main/java/com/jcircle/kafka/feed/service/impl/CacheServiceImpl.java,b/e/be0d0cb48d73d45b0d7b224913ea6368ef2b21b8
 t
 Dsrc/main/java/com/jcircle/kafka/feed/controller/CacheController.java,c/5/c5914d8931ae4ea1bba5913dcc4754a4419cd5e6
+s
+Csrc/main/java/com/jcircle/kafka/feed/processor/IMovieProcessor.java,1/0/108764491b31e175e62c19503774921afb153284
+v
+Fsrc/main/java/com/jcircle/kafka/feed/processor/PrevMovieProcessor.java,4/2/42b4acdcca0cb81398e85e717089e2d6f1ccb312
+x
+Hsrc/main/java/com/jcircle/kafka/feed/processor/DetailMovieProcessor.java,8/3/8350dd5db9f7ec45dc497a36f3374bfc5c0ab9d6
+g
+7src/main/java/com/jcircle/kafka/feed/model/Theater.java,4/b/4b89bccaa4c70466660ae33f0c3103c82ef6883a
+p
+@src/main/java/com/jcircle/kafka/feed/request/TheaterRequest.java,9/f/9f5536c2d4c89577805a14299365dcf2446b51ca
+r
+Bsrc/main/java/com/jcircle/kafka/feed/response/TheaterResponse.java,2/8/28c658cf9e9af659a51d8e87ce3c2850c7e7b703
+v
+Fsrc/main/java/com/jcircle/kafka/feed/controller/TheaterController.java,1/6/167cee065ab886461b1af1039b9c006be54bff5b
+9
+	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
