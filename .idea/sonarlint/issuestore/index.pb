@@ -52,3 +52,9 @@ v
 Fsrc/main/java/com/jcircle/kafka/feed/controller/TheaterController.java,1/6/167cee065ab886461b1af1039b9c006be54bff5b
 9
 	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+x
+Hsrc/main/java/com/jcircle/kafka/feed/service/consumer/MovieConsumer.java,f/b/fb9d653420bc4f5e4595fb23def31f899b62a146
+x
+Hsrc/main/java/com/jcircle/kafka/feed/service/producer/MovieProducer.java,d/e/de63937732b4bdf50989508b8c50922e9e4eba5b
+t
+Dsrc/main/java/com/jcircle/kafka/feed/config/KafkaProducerConfig.java,5/c/5c565c2413dd60f510caffa4782c2d8895302a78
